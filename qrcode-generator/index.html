@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
+    <title>QR Gen | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <div class="container">
         <h1>QR CODE GENERATOR</h1>
         <input type="text" id="text-input" placeholder="Insert Link Here">
         <button id="generate-btn">Generate</button>
-        <button id="download-btn" style="display: none;">Download Image</button>
         
         <div id="qrcode"></div>
+        <button id="download-btn" style="display: none;">Download PNG</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
